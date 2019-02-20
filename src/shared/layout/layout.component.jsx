@@ -25,7 +25,7 @@ var LayoutComponent = createReactClass({
                         <Route path="/inlinerender" render={function () {
                             return (
                                 <div className="container add-top-gutter">
-                                    Inline renderimg of route
+                                    Inline rendering of route
                                             </div>
                             )
                         }} />

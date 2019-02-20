@@ -18,7 +18,7 @@ var MainListComponent = createReactClass({
                 this.props.children </b></p>
                     </div>
                     <div className="col-md-12">
-                        <ListComponent>
+                        <ListComponent firstColor="#ccc" secondColor="#eee">
                             <h4>Element one</h4>
                             {middleData}
                             <h4>Element last</h4>

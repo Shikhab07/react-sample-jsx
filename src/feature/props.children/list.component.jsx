@@ -5,9 +5,15 @@ import createReactClass from "create-react-class";
 // Demonstrates how innerhtml of a component can be manipulated
 var ListComponent = createReactClass({
 
+    
     render: function () {
-        var children = React.Children.map(this.props.children, function (child) {
-             return <li>{child}</li>;
+        console.log(this.props.firstColor);
+        var children = this.props.children.map((row, index) => {
+            if (index % 2) {
+                return React.cloneElement(<li key={index}> {row} </li>, { style: { background: this.props.firstColor } });
+            } else {
+                return React.cloneElement(<li key={index}>{row} </li>, { style: { background: this.props.secondColor } });
+            }
         });
 
         return (
