@@ -36,6 +36,9 @@ var HeaderComponent = createReactClass({
                                 <li>
                                     <Link to='/nestedRoute' className='nav-link'>Nested</Link>
                                 </li>
+                                <li>
+                                    <Link to='/table' className='nav-link'>Table Listing</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

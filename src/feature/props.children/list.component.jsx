@@ -7,7 +7,6 @@ var ListComponent = createReactClass({
 
     
     render: function () {
-        console.log(this.props.firstColor);
         var children = this.props.children.map((row, index) => {
             if (index % 2) {
                 return React.cloneElement(<li key={index}> {row} </li>, { style: { background: this.props.firstColor } });

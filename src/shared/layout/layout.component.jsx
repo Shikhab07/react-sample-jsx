@@ -7,7 +7,7 @@ import HomeComponent from '../../feature/home/home.component';
 import MainListComponent from '../../feature/props.children/mainList.component';
 import FormComponent from '../../feature/forms/form.component';
 import MainComponent from '../../feature/nested/main.component';
-
+import TableComponent from '../../feature/list/tableList.component';
 var LayoutComponent = createReactClass({
     render: function () {
         return (
@@ -30,6 +30,7 @@ var LayoutComponent = createReactClass({
                             )
                         }} />
                         <Route path="/nestedRoute" component={MainComponent} />
+                        <Route path="/table" component={TableComponent} />
                         <Route path="*" component={NotFoundComponent} />
                     </Switch>
                 </section>
