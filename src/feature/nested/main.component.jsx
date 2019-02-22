@@ -5,15 +5,21 @@ import SidebarComponent from './sidebar.component';
 import RightComponent from './right.component';
 import './main.component.scss';
 
+import { SharedCategoryContext } from './category-context';
 var MainComponent = createReactClass({
+    getInitialState: function () {
+        return { message: 'This message is passed from category main component' };
+    },
     render: function () {
         return (
-            <div className="container nested">
-                <SidebarComponent></SidebarComponent>
-                <Switch>
-                    <Route exact path='/nestedRoute/:id' component={RightComponent} />
-                </Switch>
-            </div>
+            <SharedCategoryContext.Provider value={{ message: this.state.message }} >
+                <div className="container nested">
+                    <SidebarComponent></SidebarComponent>
+                    <Switch>
+                        <Route exact path='/nestedRoute/:id' component={RightComponent} />
+                    </Switch>
+                </div>
+            </SharedCategoryContext.Provider >
         );
     }
 });
