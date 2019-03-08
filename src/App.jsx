@@ -1,13 +1,13 @@
 import React from 'react';
-import LayoutComponent from './shared/layout/layout.component';
+import LayoutContainerComponent from './shared/layout/layout.component';
 import { BrowserRouter } from 'react-router-dom';
 import createReactClass from "create-react-class";
-
+import {unregister} from './config';
 var App = createReactClass({
   render: function () {
     return (
       <BrowserRouter>
-        <LayoutComponent></LayoutComponent>
+        <LayoutContainerComponent></LayoutContainerComponent>
       </BrowserRouter>
     );
   }

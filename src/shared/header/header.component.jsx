@@ -39,6 +39,12 @@ var HeaderComponent = createReactClass({
                                 <li>
                                     <Link to='/table' className='nav-link'>Table Listing</Link>
                                 </li>
+                                <li>
+                                    <Link to='/redux-demo' className='nav-link'>Redux</Link>
+                                </li>
+                                <li>
+                                    <Link to='/saga' >Saga</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
