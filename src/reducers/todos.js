@@ -14,7 +14,7 @@ import {
 // No surprises. No side effects. No API calls. No mutations. Just a calculation
 
 const todos = (state = [], action) => {
-   
+
     switch (action.type) {
         case ADD_TODO:
             return [
@@ -59,11 +59,11 @@ const todos = (state = [], action) => {
                 ...state,
                 loading: action.loading
             }
-      
+
         case 'NEWS_RECIEVED_TEST':
-             console.log('finally cancelled');
-             break;
-             case 'GET_NEWS':
+            console.log('finally cancelled');
+            break;
+        case 'GET_NEWS':
         default:
             return state;
     }

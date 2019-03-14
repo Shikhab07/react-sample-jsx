@@ -2,6 +2,7 @@ import React from 'react';
 import LayoutContainerComponent from './shared/layout/layout.component';
 import { BrowserRouter } from 'react-router-dom';
 import createReactClass from "create-react-class";
+// eslint-disable-next-line 
 import {unregister} from './config';
 var App = createReactClass({
   render: function () {

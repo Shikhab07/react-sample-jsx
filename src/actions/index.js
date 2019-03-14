@@ -41,3 +41,13 @@ export const VisibilityFilters = {
 export const getNews = () =>({
   type: 'GET_NEWS'
 });
+
+export const uploadFile = (files) =>({
+  type: 'UPLOAD_FILE',
+  files
+});
+
+export const setFiles = (files) =>({
+  type: 'SET_FILES',
+  files
+});

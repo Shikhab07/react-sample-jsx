@@ -43,7 +43,10 @@ var HeaderComponent = createReactClass({
                                     <Link to='/redux-demo' className='nav-link'>Redux</Link>
                                 </li>
                                 <li>
-                                    <Link to='/saga' >Saga</Link>
+                                    <Link to='/saga' className='nav-link'>Saga</Link>
+                                </li>
+                                <li>
+                                    <Link to='/fileupload' className='nav-link'>File Upload</Link>
                                 </li>
                             </ul>
                         </div>
